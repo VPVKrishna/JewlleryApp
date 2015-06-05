@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_cartitem"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:background="@drawable/cart_item_background"
+        android:layout_centerVertical="true"
+        android:src="@drawable/milkpacket" />
+
+    <LinearLayout
+        android:id="@+id/rl_cartdetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:layout_toRightOf="@+id/iv_cartitem"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_cartdetials_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="10dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cart_item_color"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:textSize="@dimen/ts_item_title"
+                android:layout_toLeftOf="@+id/iv_itemcancel"
+                android:text="@string/cart_item_title" />
+
+            <ImageView
+                android:id="@+id/iv_itemcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#99FF0000"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/close" />
+
+            <TextView
+                android:id="@+id/tv_item_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ts_item_subtitle"
+                android:singleLine="true"
+                android:textColor="@color/cart_item_color"
+                android:layout_below="@+id/tv_item_title"
+                android:text="@string/tv_item_subtitle" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_subdetials"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border_top_drawable"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_sub1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/list_sub_margin_top"
+                android:paddingTop="@dimen/list_sub_pad_top"
+                android:background="@drawable/border_right_drawable"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_sub1_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cart_item_color"
+                    android:textSize="@dimen/ts_item_details"
+                    android:text="PRICE" />
+
+                <TextView
+                    android:id="@+id/tv_sub1_price_val"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/ts_item_details"
+                    android:textColor="@color/cart_item_color"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_sub1_price"
+                    android:text="30.00" />
+
+                <TextView
+                    android:id="@+id/tv_sub1_price_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/cart_item_color"
+                    android:textSize="@dimen/ts_item_details"
+                    android:layout_alignParentRight="true"
+                    android:text="AED" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sub2"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/list_sub_margin_top"
+                android:paddingTop="@dimen/list_sub_pad_top"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_right_drawable"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/cart_item_color"
+                    android:textSize="@dimen/ts_item_details"
+                    android:text="QUANTITY" />
+
+                <TextView
+                    android:id="@+id/tv_qty_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_qty"
+                    android:textColor="@color/cart_item_color"
+                    android:textSize="@dimen/ts_item_details"
+                    android:text="1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sub3"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/list_sub_margin_top"
+                android:paddingTop="@dimen/list_sub_pad_top"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_sub3_total"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/ts_item_details"
+                    android:textColor="@color/cart_item_color"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL" />
+
+                <TextView
+                    android:id="@+id/tv_sub3_total_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/cart_item_color"
+                    android:layout_below="@+id/tv_sub3_total"
+                    android:textSize="@dimen/ts_item_details"
+                    android:text="30.00" />
+
+                <TextView
+                    android:id="@+id/tv_sub3_total_typ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/cart_item_color"
+                    android:textSize="@dimen/ts_item_details"
+                    android:text="AED" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JewlleryApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="cart_item_title">Masafi_Water_Lemon 650 Maaza</string>
+    <string name="tv_item_subtitle">F/WATER LEMON 50 MLx6xz</string>
+    <string name="notfound">NotFound</string>
+
+
+</resources>

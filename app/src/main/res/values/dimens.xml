@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="ts_item_title">20dp</dimen>
+    <dimen name="ts_item_subtitle">16dp</dimen>
+    <dimen name="ts_item_details">14dp</dimen>
+
+    <dimen name="list_sub_pad_top">5dp</dimen>
+    <dimen name="list_sub_margin_top">2dp</dimen>
+
+    <string name="pagermargin">-340</string>
+</resources>
